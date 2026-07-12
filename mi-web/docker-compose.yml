@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  mi-web:
+    image: nginx:alpine
+    container_name: Frencores_Web
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./codigo:/usr/share/nginx/html
+    networks:
+      - red-web
+
+networks:
+  red-web:
+    external: true
+
