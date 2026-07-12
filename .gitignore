@@ -1,0 +1,6 @@
+proxy/
+*.sqlite
+*.log
+*.gz
+*.pem
+*.json
