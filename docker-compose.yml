@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx-proxy-manager
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '443:443'
+      - '81:81'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared-tunnel
+    command: tunnel --no-autoupdate run
+    environment:
+      - TUNNEL_TOKEN=eyJhIjoiMmJkZjM3NWU5YTkwNjdkODcxZTEyZjI5OTYzZGU2YzMiLCJ0IjoiMzU4MjA2MzUtZjM2My00ZjdlLWFmZDgtYmY2YjQ2MGUyZjRjIiwicyI6Ik5HTTJObUprTnpFdE5tUmxPQzAwWkRWbExXRTFORGN0TmpjMFlXUmtZMlV4WkRWaSJ9
+      - TUNNEL_TRANSPORT_PROTOCOL=http2
+    dns:
+      - 1.1.1.1
+      - 1.0.0.1
+    restart: unless-stopped
+
+networks:
+  default:
+    name: proxy-network
+    external: true
