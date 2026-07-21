@@ -8,7 +8,7 @@ function App() {
         
         <div className="title-bar">
           <button aria-label="Close" className="close"></button>
-          <h1 className="title" style={{ color: 'black' }}>Status.exe</h1>
+          <h1 className="title" style={{ color: 'black' }}>index.html</h1>
           <button aria-label="Resize" className="resize"></button>
         </div>
         
@@ -23,7 +23,7 @@ function App() {
             marginBottom: '20px',
             textShadow: '1px 1px 0px white' 
           }}>
-            ¡Hola Mundo!
+            Welcome!
           </div>
           
           <div style={{ 
@@ -32,7 +32,9 @@ function App() {
             color: 'black', 
             lineHeight: '1.6' 
           }}>
-            Mi servidor privado está funcionando con React, TypeScript y System.css.
+            Web Services are currently online, fell free to explore!
+
+            -creator
           </div>
           
           <section className="field-row" style={{ justifyContent: 'center', marginTop: '30px' }}>
