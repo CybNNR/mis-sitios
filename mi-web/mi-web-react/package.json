@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sakun/system.css": "github:sakofchit/system.css",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
