@@ -38,7 +38,7 @@ function App() {
           </div>
           
           <section className="field-row" style={{ justifyContent: 'center', marginTop: '30px' }}>
-            <button className="btn">Explorar Servicios</button>
+            <button className="btn">Explore Services</button>
           </section>
         </div>
         
