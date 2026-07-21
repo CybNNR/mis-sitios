@@ -10,9 +10,9 @@ services:
     volumes:
       - ./mi-web-react/dist:/usr/share/nginx/html
     networks:
-      - red-web
+      - proxy-network
 
 networks:
-  red-web:
+  proxy-network:
     external: true
 
