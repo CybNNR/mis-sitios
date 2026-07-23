@@ -1,0 +1,16 @@
+services:
+  db_blog:
+    image: postgres:15-alpine
+    container_name: Postgres_Blog
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: admin_blog
+      POSTGRES_PASSWORD: nismobnr32gtr
+      POSTGRES_DB: bitacora_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata_blog:/var/lib/postgresql/data
+
+volumes:
+  pgdata_blog:
