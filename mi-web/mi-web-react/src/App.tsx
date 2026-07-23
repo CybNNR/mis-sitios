@@ -1,7 +1,7 @@
 import './index.css';
 import Blog from './pages/blog';
 import Landing from './pages/landing';
-import Navbar from './navbar';
+import Navbar from './Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
