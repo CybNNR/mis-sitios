@@ -1,50 +1,20 @@
 import './index.css';
+import Blog from './pages/blog';
+import Landing from './pages/landing'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <main style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#55aaaa' }}>
-      
-      <div className="window" style={{ width: '400px' }}>
-        
-        <div className="title-bar">
-          <button aria-label="Close" className="close"></button>
-          <h1 className="title" style={{ color: 'black' }}>index.html</h1>
-          <button aria-label="Resize" className="resize"></button>
-        </div>
-        
-        <div className="separator"></div>
-        
-        <div className="window-pane" style={{ padding: '30px 20px', textAlign: 'center' }}>
-          
-          <div style={{ 
-            fontFamily: 'Chicago, sans-serif', 
-            fontSize: '28px', 
-            fontWeight: 'normal', 
-            marginBottom: '20px',
-            textShadow: '1px 1px 0px white' 
-          }}>
-            Welcome!
-          </div>
-          
-          <div style={{ 
-            fontFamily: 'Geneva, sans-serif',
-            fontSize: '16px', 
-            color: 'black', 
-            lineHeight: '1.6' 
-          }}>
-            Web Services are currently online, fell free to explore!
+    <BrowserRouter>
+      <Routes>
 
-            -creator
-          </div>
-          
-          <section className="field-row" style={{ justifyContent: 'center', marginTop: '30px' }}>
-            <button className="btn">Explore Services</button>
-          </section>
-        </div>
-        
-      </div>
-    </main>
+        <Route path = "/" element = {<Landing />} />
+        <Route path = "/blog" element = {<Blog />} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
