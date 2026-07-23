@@ -16,22 +16,11 @@ function Landing() {
         
         <div className="window-pane" style={{ padding: '30px 20px', textAlign: 'center' }}>
           
-          <div style={{ 
-            fontFamily: 'Chicago, sans-serif', 
-            fontSize: '35px', 
-            fontWeight: 'normal', 
-            marginBottom: '20px',
-            textShadow: '1px 1px 0px white' 
-          }}>
+          <div style={{ fontFamily: 'Chicago, sans-serif', fontSize: '35px', fontWeight: 'normal', marginBottom: '20px',textShadow: '1px 1px 0px white' }}>
             Welcome!
           </div>
           
-          <div style={{ 
-            fontFamily: 'Geneva, sans-serif',
-            fontSize: '20px', 
-            color: 'black', 
-            lineHeight: '1.6' 
-          }}>
+          <div style={{ fontFamily: 'Geneva, sans-serif',fontSize: '20px', color: 'black', lineHeight: '1.6' }}>
             Hey there! I'm currently building my site  feel free to explore! 
 
             -Frenetic Fox
@@ -41,7 +30,16 @@ function Landing() {
             <button className="btn">Explore Services</button>
           </section>
         </div>
-        
+
+          <div style={{position: 'absolute', top: '60px', right: '0px', display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'right'}}>
+            <div style={{display: "flex", flexDirection: "column", alignItems: "center", cursor: "pointer", width: '80pc'}}>
+              <img src="/Findr.png" alt="Findr" style={{width: '40px', marginBottom: '5px'}}/>
+              <span style={{fontFamily: 'Geneva, sans-serif', fontSize: '12px', backgroundColor: 'white', color: "black", padding: '2px 4px', textAlign: "center"}}>
+                Macinosh HD
+              </span>
+
+            </div>
+          </div>
       </div>
     </main>
 
