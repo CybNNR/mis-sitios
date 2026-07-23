@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 function Navbar(){
     return (
@@ -6,12 +7,11 @@ function Navbar(){
             <li role="menu-item" tabIndex={0} aria-haspopup='true'>
                 File
                 <ul role="menu">
-                    <li role="menu item"><a href="#menu">About this Site</a></li>
-                    <li role="menu item"><a href="#menu">Go to Blog</a></li>
-                    <li role="menu item"><a href="#menu">Go to Desktop</a></li>
-                    <li role="menu item"><a href="#menu">Go to Resume/Cv</a></li>
-                    <li role="menu item"><a href="#menu">Go to Services</a></li>
-                    <li role="menu item"><a href="#menu">Shut down</a></li>
+                    <li role="menu-item"><Link to="/about">About this Mac</Link></li>
+                    <li role="menu-item"><Link to="/">Go to Desktop</Link></li>
+                    <li role="menu-item"><Link to="/blog">Go to Blog</Link></li>
+                    <li role="menu-item"><Link to="/curriculum">Go to Curriculum</Link></li>
+                    <li role="menu-item"><a href="https://google.com">Shut down</a></li>
                 </ul>
             </li>
             <li role="menu-item" tabIndex={0} aria-haspopup='true'>
