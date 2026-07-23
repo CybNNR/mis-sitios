@@ -8,7 +8,7 @@ function Landing() {
         
         <div className="title-bar">
           <button aria-label="Close" className="close"></button>
-          <h1 className="title" style={{ color: 'black' }}>index.html</h1>
+          <h1 className="title" style={{ color: 'black' }}>index.txt</h1>
           <button aria-label="Resize" className="resize"></button>
         </div>
         
@@ -32,7 +32,7 @@ function Landing() {
             color: 'black', 
             lineHeight: '1.6' 
           }}>
-            Web Services are currently online, fell free to explore! 
+            Hey there! I'm currently building my site  feel free to explore! 
 
             -Frenetic Fox
           </div>
@@ -41,9 +41,6 @@ function Landing() {
             <button className="btn">Explore Services</button>
           </section>
         </div>
-        
-      </div>
-      <div>
         
       </div>
     </main>
