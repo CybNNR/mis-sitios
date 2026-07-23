@@ -8,7 +8,7 @@ function Landing() {
         
         <div className="title-bar">
           <button aria-label="Close" className="close"></button>
-          <h1 className="title" style={{ color: 'black' }}>index.txt</h1>
+          <h1 className="title" style={{ color: 'black' }}>Readme.txt</h1>
           <button aria-label="Resize" className="resize"></button>
         </div>
         
@@ -18,7 +18,7 @@ function Landing() {
           
           <div style={{ 
             fontFamily: 'Chicago, sans-serif', 
-            fontSize: '28px', 
+            fontSize: '35px', 
             fontWeight: 'normal', 
             marginBottom: '20px',
             textShadow: '1px 1px 0px white' 
@@ -28,7 +28,7 @@ function Landing() {
           
           <div style={{ 
             fontFamily: 'Geneva, sans-serif',
-            fontSize: '16px', 
+            fontSize: '20px', 
             color: 'black', 
             lineHeight: '1.6' 
           }}>
@@ -37,7 +37,7 @@ function Landing() {
             -Frenetic Fox
           </div>
           
-          <section className="field-row" style={{ justifyContent: 'center', marginTop: '30px' }}>
+          <section className="field-row" style={{ justifyContent: 'center', marginTop: '35px' }}>
             <button className="btn">Explore Services</button>
           </section>
         </div>
