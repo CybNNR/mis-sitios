@@ -9,7 +9,7 @@ const port = 3000;
 
 app.use(cors());
 app.use(express.json);
-const db = new pool({
+const db = new Pool({
     user: 'admin_blog', 
     host: 'localhost', 
     database: 'bitacora_db',
